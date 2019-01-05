@@ -39,7 +39,6 @@ import versioned.host.exp.exponent.modules.api.FacebookModule;
 import versioned.host.exp.exponent.modules.api.ImageManipulatorModule;
 import versioned.host.exp.exponent.modules.api.ImagePickerModule;
 import versioned.host.exp.exponent.modules.api.IntentLauncherModule;
-import versioned.host.exp.exponent.modules.api.KeepAwakeModule;
 import versioned.host.exp.exponent.modules.api.KeyboardModule;
 import versioned.host.exp.exponent.modules.api.PedometerModule;
 import versioned.host.exp.exponent.modules.api.ScreenOrientationModule;
@@ -187,7 +186,6 @@ public class ExponentPackage implements ReactPackage {
         nativeModules.add(new FacebookModule(reactContext));
         nativeModules.add(new AmplitudeModule(reactContext, scopedContext));
         nativeModules.add(new RNViewShotModule(reactContext, scopedContext));
-        nativeModules.add(new KeepAwakeModule(reactContext));
         nativeModules.add(new ExponentTestNativeModule(reactContext));
         nativeModules.add(new WebBrowserModule(reactContext));
         nativeModules.add(new NativeAdManager(reactContext));
